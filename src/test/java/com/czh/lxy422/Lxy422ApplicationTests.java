@@ -32,9 +32,7 @@ class Lxy422ApplicationTests {
         Integer row = userMapper.deleteById(5);
         System.out.println("删除影响的记录数是：" + row);
 
-        if (row == null) {
-            System.out.println("返回值为 null，检查 Mapper 配置");
-        }
+
     }
     @Test
     public void testinsert(){
