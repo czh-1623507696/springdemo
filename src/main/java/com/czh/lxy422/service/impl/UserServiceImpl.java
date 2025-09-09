@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
             LocalDateTime updateTime = LocalDateTime.parse(apart[5], DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
             return new User(id,username,password,name,age,updateTime);
         }).collect(Collectors.toList());
-
+        
         //返回数据（josn格式）
         return userList;
     }

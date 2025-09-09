@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.czh.lxy422.mapper.UserMapper">
+
+    <!--查询操作-->
+    <select id="findAll" resultType="com.czh.lxy422.pojo.User">
+        select * from user
+    </select>
+
+    <delete id="deleteById" parameterType="java.lang.Integer">
+        delete from user where id = #{id}
+    </delete>
+
+</mapper>
